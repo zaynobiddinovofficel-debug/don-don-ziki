@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don-don-ziki</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-white relative min-h-screen flex flex-col items-center">
+  <!-- body img -->
+  <img src="./img/Rectangle.png" class="absolute inset-0 w-full h-full object-cover" alt="background">
+  <div class="relative z-10 flex flex-col items-center w-full px-6 mt-10">
+    <!-- Header -->
+    <header class="relative z-10 flex flex-col items-center w-full px-6 mt-30">
+      <div
+        class="w-full max-w-[700px] mx-auto flex justify-between items-center p-4 border-4 border-white rounded-lg mb-10">
+        <!-- Title -->
+        <img src="./img/tipa-logo.svg" alt="tipa-logo">
+        <!-- Score -->
+        <div class="flex flex-col items-center bg-white text-center p-7 rounded-lg min-w-[150px]">
+          <img src="./img/Group2.png" alt="Score">
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main id="gameZone" class="relative w-[476px] h-[430px]">
+      <!-- gameZone -->
+      <!-- triangle -->
+      <img class="absolute inset-0 m-auto w-[310px] h-[280px]" src="./img/triangle.svg" alt="triangle">
+      <!-- paper -->
+      <img class="js-hand absolute top-0 left-0 w-[198px] h-[203px] cursor-pointer transition hover:scale-110"
+        src="./img/paper.svg" alt="paper">
+      <!-- scissors -->
+      <img class="js-hand absolute top-0 right-0 w-[198px] h-[203px] cursor-pointer transition hover:scale-110"
+        src="./img/scissors.svg" alt="scissors">
+      <!-- rock -->
+      <img
+        class="js-hand absolute bottom-0 left-1/2 -translate-x-1/2 w-[198px] h-[203px] cursor-pointer transition hover:scale-110"
+        src="./img/rock.svg" alt="rock">
+    </main>
+
+    <!-- resultZone -->
+    <div id="resultZone" class="hidden flex items-center justify-center gap-16 mt-10">
+      <img id="user" class="w-[198px] h-[203px]" src="" alt=" user">
+      <button id="PlayAgainButton"
+        class="px-8 py-3 bg-white text-[#141539] font-bold rounded-lg transition hover:scale-105 hover:bg-gray-100">
+        Play Again
+      </button>
+      <img id="robot" class="w-[198px] h-[203px]" src="" alt=" robot">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="absolute bottom-8 right-8 flex flex-col items-center gap-2 z-10">
+    <!-- buttons-->
+    <!-- rules -->
+    <button id="ruleButton"
+      class="text-white text-[16px] border border-white px-8 py-2 rounded-lg uppercase hover:bg-white hover:text-[#3b4262] transition-colors">Rules</button>
+    <!-- advanced -->
+    <button id="advancedButton"
+      class="text-white text-[16px] border border-white px-4 py-2 rounded-lg uppercase hover:bg-white hover:text-[#3b4262] transition-colors">Advanced</button>
+  </footer>
+  
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
