@@ -5,5 +5,4 @@ const elPlayAgainButton = document.querySelector("#PlayAgainButton");
 const elGameZone = document.querySelector("#gameZone");
 const elResultZone = document.querySelector("#resultZone");
 
-
-export { elHands, elUser, elRobot, elPlayAgainButton, elGameZone, elResultZone };
+export { elHands, elUser, elRobot, elPlayAgainButton, elGameZone, elResultZone, };
