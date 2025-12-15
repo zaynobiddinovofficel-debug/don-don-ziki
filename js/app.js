@@ -1,4 +1,4 @@
-import { elGameZone, elHands, elPlayAgainButton, elResultZone, elRobot, elUser } from "../html-elements.js";
+import { elGameZone, elHands, elPlayAgainButton, elResultZone, elRobot, elRuleButton, elUser } from "../html-elements.js";
 
 elHands.forEach((elHand)=>{
  elHand.addEventListener("click", (evt)=>{
@@ -53,7 +53,6 @@ elHands.forEach((elHand) => {
       }, 1000);
     });
 });
-
 
 // Play Again Game
 elPlayAgainButton.addEventListener("click", () => {
