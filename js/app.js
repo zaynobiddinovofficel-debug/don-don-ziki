@@ -49,6 +49,7 @@ elHands.forEach((elHand) => {
       setTimeout(() => {
         elRobot.src = `./img/${robot}.svg`
         const winner = checkWinner(user, robot);
+       console.log(winner);
        alert(winner)
       }, 1000);
     });
